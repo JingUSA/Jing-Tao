@@ -140,6 +140,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./A2.html"> 
 <span class="menu-text">Assignment 2</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./A3.html" aria-current="page"> 
+<span class="menu-text">Assignment 3</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -904,25 +908,28 @@ Attaching package: 'scales'</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.exists</span>(<span class="st">"A3.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<pre><code>[1] FALSE</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="fu">c</span>(<span class="st">"."</span>, <span class="st">"_site"</span>, <span class="st">"docs"</span>), <span class="at">pattern =</span> <span class="st">"A3</span><span class="sc">\\</span><span class="st">.html"</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "A3.html"</code></pre>
+<pre><code>[1] "Jing-Tao/A3.html"</code></pre>
 </div>
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.rename</span>(<span class="st">"Jing-Tao/A3.html"</span>, <span class="st">"A3.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">dir.exists</span>(<span class="st">"Jing-Tao/A3_files"</span>)) {</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">file.rename</span>(<span class="st">"Jing-Tao/A3_files"</span>, <span class="st">"A3_files"</span>)</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning in file.rename("Jing-Tao/A3.html", "A3.html"): cannot rename file
-'Jing-Tao/A3.html' to 'A3.html', reason 'No such file or directory'</code></pre>
+<pre><code>Warning in file.rename("Jing-Tao/A3_files", "A3_files"): cannot rename file
+'Jing-Tao/A3_files' to 'A3_files', reason 'Directory not empty'</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">dir.exists</span>(<span class="st">"Jing-Tao/A3_files"</span>)) {</span>
-<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">file.rename</span>(<span class="st">"Jing-Tao/A3_files"</span>, <span class="st">"A3_files"</span>)</span>
-<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
