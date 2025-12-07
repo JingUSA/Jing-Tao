@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='432.00pt' height='288.00pt' viewBox='0 0 432.00 288.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw0MzIuMDB8MC4wMHwyODguMDA='>
+    <rect x='0.00' y='0.00' width='432.00' height='288.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw0MzIuMDB8MC4wMHwyODguMDA=)'>
+<text x='230.40' y='34.67' text-anchor='middle' style='font-size: 14.40px; font-weight: bold; font-family: "Arial";' textLength='303.64px' lengthAdjust='spacingAndGlyphs'>Histogram of Daily Cyber Incidents (Targets)</text>
+<text x='230.40' y='269.28' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='93.36px' lengthAdjust='spacingAndGlyphs'>Incidents per Day</text>
+<text transform='translate(12.96,136.80) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='27.34px' lengthAdjust='spacingAndGlyphs'>Days</text>
+<line x1='71.73' y1='214.56' x2='364.66' y2='214.56' style='stroke-width: 0.75;' />
+<line x1='71.73' y1='214.56' x2='71.73' y2='221.76' style='stroke-width: 0.75;' />
+<line x1='120.55' y1='214.56' x2='120.55' y2='221.76' style='stroke-width: 0.75;' />
+<line x1='169.37' y1='214.56' x2='169.37' y2='221.76' style='stroke-width: 0.75;' />
+<line x1='218.19' y1='214.56' x2='218.19' y2='221.76' style='stroke-width: 0.75;' />
+<line x1='267.02' y1='214.56' x2='267.02' y2='221.76' style='stroke-width: 0.75;' />
+<line x1='315.84' y1='214.56' x2='315.84' y2='221.76' style='stroke-width: 0.75;' />
+<line x1='364.66' y1='214.56' x2='364.66' y2='221.76' style='stroke-width: 0.75;' />
+<text x='71.73' y='240.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='120.55' y='240.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='169.37' y='240.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='218.19' y='240.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>30</text>
+<text x='267.02' y='240.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>40</text>
+<text x='315.84' y='240.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>50</text>
+<text x='364.66' y='240.48' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>60</text>
+<line x1='59.04' y1='208.80' x2='59.04' y2='75.71' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='208.80' x2='51.84' y2='208.80' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='182.18' x2='51.84' y2='182.18' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='155.57' x2='51.84' y2='155.57' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='128.95' x2='51.84' y2='128.95' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='102.33' x2='51.84' y2='102.33' style='stroke-width: 0.75;' />
+<line x1='59.04' y1='75.71' x2='51.84' y2='75.71' style='stroke-width: 0.75;' />
+<text transform='translate(41.76,208.80) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text transform='translate(41.76,182.18) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='20.02px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text transform='translate(41.76,128.95) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='20.02px' lengthAdjust='spacingAndGlyphs'>300</text>
+<text transform='translate(41.76,75.71) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='20.02px' lengthAdjust='spacingAndGlyphs'>500</text>
+</g>
+<defs>
+  <clipPath id='cpNTkuMDR8NDAxLjc2fDU5LjA0fDIxNC41Ng=='>
+    <rect x='59.04' y='59.04' width='342.72' height='155.52' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTkuMDR8NDAxLjc2fDU5LjA0fDIxNC41Ng==)'>
+<rect x='71.73' y='64.80' width='24.41' height='144.00' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='96.14' y='199.48' width='24.41' height='9.32' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='120.55' y='205.34' width='24.41' height='3.46' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='144.96' y='207.74' width='24.41' height='1.06' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='169.37' y='207.47' width='24.41' height='1.33' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='193.78' y='206.40' width='24.41' height='2.40' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='218.19' y='208.27' width='24.41' height='0.53' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='242.61' y='208.53' width='24.41' height='0.27' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='267.02' y='208.53' width='24.41' height='0.27' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='291.43' y='208.80' width='24.41' height='0.00' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='315.84' y='208.53' width='24.41' height='0.27' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='340.25' y='208.80' width='24.41' height='0.00' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+<rect x='364.66' y='208.53' width='24.41' height='0.27' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #ADD8E6;' />
+</g>
+</g>
+</svg>
