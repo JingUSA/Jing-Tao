@@ -1,16 +1,12 @@
 library(shiny)
 
-# ---------- 1. 内置 uspop 数据处理 ----------
 uspop_df <- data.frame(
   year = as.numeric(time(uspop)),
   population = as.numeric(uspop)
 )
 
-# ---------- 2. 读取你的真实数据（CFR 网络攻击） ----------
-# 确保 CFR_daily_events_with_iso2.csv 与 app.R 在同一文件夹
 cfr <- read.csv("CFR_daily_events_with_iso2.csv", stringsAsFactors = FALSE)
 
-# 处理日期与年份
 cfr$Date <- as.Date(cfr$Date)
 cfr$year <- as.numeric(format(cfr$Date, "%Y"))
 
@@ -108,7 +104,7 @@ ui <- fluidPage(
              )
     ),
     
-    # ---------- Tab 4: 你的真实数据（CFR Cyber Data） ----------
+    # ---------- Tab 4: CFR Cyber Data ----------
     tabPanel("CFR Cyber Data",
              sidebarLayout(
                sidebarPanel(
@@ -142,7 +138,6 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   
-  # ------ mtcars 图 ------
   output$mtcarsPlot <- renderPlot({
     xvar <- mtcars[[input$mtcars_x]]
     yvar <- mtcars[[input$mtcars_y]]
@@ -154,7 +149,6 @@ server <- function(input, output, session) {
     )
   })
   
-  # ------ USArrests 图 ------
   output$usarrestsPlot <- renderPlot({
     xvar <- USArrests[[input$usa_x]]
     yvar <- USArrests[[input$usa_y]]
@@ -166,7 +160,6 @@ server <- function(input, output, session) {
     )
   })
   
-  # ------ uspop 折线图 ------
   output$uspopPlot <- renderPlot({
     df <- subset(uspop_df,
                  year >= input$year_range[1] &
@@ -180,9 +173,7 @@ server <- function(input, output, session) {
     )
   })
   
-  # ------ CFR Cyber Data 柱状图（你的真实数据）------
   output$cfrPlot <- renderPlot({
-    # 根据年份筛选
     df <- subset(cfr,
                  !is.na(year) &
                    year >= input$cfr_year[1] &
@@ -200,7 +191,6 @@ server <- function(input, output, session) {
     
     counts <- sort(table(vals), decreasing = TRUE)
     
-    # 只画前 15 个，避免 x 轴太挤
     if (length(counts) > 15) {
       counts <- counts[1:15]
     }
