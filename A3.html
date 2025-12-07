@@ -74,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-79108a0fc1995748cbd19a5b0e3e3e7c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,10 +104,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -129,10 +128,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./assignment1.html"> 
 <span class="menu-text">Assignment 1</span></a>
   </li>  
@@ -143,6 +138,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link active" href="./A3.html" aria-current="page"> 
 <span class="menu-text">Assignment 3</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./A4.html"> 
+<span class="menu-text">Assignment 4</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./A5.html"> 
+<span class="menu-text">Assignment 5</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -155,33 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#rerun-murrell01.r" id="toc-rerun-murrell01.r" class="nav-link active" data-scroll-target="#rerun-murrell01.r">1. Rerun murrell01.R</a></li>
-  <li><a href="#a.-choose-one-of-the-six-charts-and-explain-how-it-is-configured-by-adding-documentation-to-the-codes." id="toc-a.-choose-one-of-the-six-charts-and-explain-how-it-is-configured-by-adding-documentation-to-the-codes." class="nav-link" data-scroll-target="#a.-choose-one-of-the-six-charts-and-explain-how-it-is-configured-by-adding-documentation-to-the-codes.">a. Choose one of the six charts and explain how it is configured by adding documentation to the codes.</a></li>
-  <li><a href="#rerun-anscombe01.r-in-teams-folder" id="toc-rerun-anscombe01.r-in-teams-folder" class="nav-link" data-scroll-target="#rerun-anscombe01.r-in-teams-folder">2. Rerun anscombe01.R (in Teams folder)</a>
-  <ul class="collapse">
-  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
-  <li><a href="#objective-identify-data-or-model-problems-using-visualization" id="toc-objective-identify-data-or-model-problems-using-visualization" class="nav-link" data-scroll-target="#objective-identify-data-or-model-problems-using-visualization">Objective: Identify data or model problems using visualization</a></li>
-  <li><a href="#anscombe-1973-quartlet" id="toc-anscombe-1973-quartlet" class="nav-link" data-scroll-target="#anscombe-1973-quartlet">Anscombe (1973) Quartlet</a></li>
-  <li><a href="#a.-compare-the-regression-models" id="toc-a.-compare-the-regression-models" class="nav-link" data-scroll-target="#a.-compare-the-regression-models">a. Compare the regression models</a></li>
-  <li><a href="#although-the-four-regression-models-show-nearly-identical-slopes-intercepts-and-r²-values-the-actual-data-patterns-behind-them-are-very-different.-in-the-first-dataset-the-points-follow-a-roughly-linear-pattern-so-a-straight-line-model-makes-sense.-in-the-second-dataset-the-relationship-is-curved-which-breaks-the-linearity-assumption.-in-the-third-dataset-one-extreme-point-with-high-leverage-has-a-strong-influence-on-the-line.-in-the-fourth-dataset-most-points-are-clustered-at-the-same-x-value-and-a-single-outlier-determines-the-slope.-this-comparison-shows-that-summary-statistics-alone-can-be-misleading-visualizing-the-data-is-essential-to-detect-problems-like-non-linearity-leverage-or-outliers." id="toc-although-the-four-regression-models-show-nearly-identical-slopes-intercepts-and-r²-values-the-actual-data-patterns-behind-them-are-very-different.-in-the-first-dataset-the-points-follow-a-roughly-linear-pattern-so-a-straight-line-model-makes-sense.-in-the-second-dataset-the-relationship-is-curved-which-breaks-the-linearity-assumption.-in-the-third-dataset-one-extreme-point-with-high-leverage-has-a-strong-influence-on-the-line.-in-the-fourth-dataset-most-points-are-clustered-at-the-same-x-value-and-a-single-outlier-determines-the-slope.-this-comparison-shows-that-summary-statistics-alone-can-be-misleading-visualizing-the-data-is-essential-to-detect-problems-like-non-linearity-leverage-or-outliers." class="nav-link" data-scroll-target="#although-the-four-regression-models-show-nearly-identical-slopes-intercepts-and-r²-values-the-actual-data-patterns-behind-them-are-very-different.-in-the-first-dataset-the-points-follow-a-roughly-linear-pattern-so-a-straight-line-model-makes-sense.-in-the-second-dataset-the-relationship-is-curved-which-breaks-the-linearity-assumption.-in-the-third-dataset-one-extreme-point-with-high-leverage-has-a-strong-influence-on-the-line.-in-the-fourth-dataset-most-points-are-clustered-at-the-same-x-value-and-a-single-outlier-determines-the-slope.-this-comparison-shows-that-summary-statistics-alone-can-be-misleading-visualizing-the-data-is-essential-to-detect-problems-like-non-linearity-leverage-or-outliers.">Although the four regression models show nearly identical slopes, intercepts, and R² values, the actual data patterns behind them are very different. In the first dataset, the points follow a roughly linear pattern, so a straight-line model makes sense. In the second dataset, the relationship is curved, which breaks the linearity assumption. In the third dataset, one extreme point with high leverage has a strong influence on the line. In the fourth dataset, most points are clustered at the same x-value, and a single outlier determines the slope. This comparison shows that summary statistics alone can be misleading; visualizing the data is essential to detect problems like non-linearity, leverage, or outliers.</a></li>
-  <li><a href="#b.-compare-different-ways-to-create-the-plots-e.g.-changing-colors-line-types-plot-characters" id="toc-b.-compare-different-ways-to-create-the-plots-e.g.-changing-colors-line-types-plot-characters" class="nav-link" data-scroll-target="#b.-compare-different-ways-to-create-the-plots-e.g.-changing-colors-line-types-plot-characters">b. Compare different ways to create the plots (e.g.&nbsp;changing colors, line types, plot characters)</a></li>
-  <li><a href="#can-you-finetune-the-charts-without-using-other-packages-consult-rgraphics-by-murrell" id="toc-can-you-finetune-the-charts-without-using-other-packages-consult-rgraphics-by-murrell" class="nav-link" data-scroll-target="#can-you-finetune-the-charts-without-using-other-packages-consult-rgraphics-by-murrell">3. Can you finetune the charts without using other packages (consult RGraphics by Murrell)?</a></li>
-  <li><a href="#a.-use-a-serif-font" id="toc-a.-use-a-serif-font" class="nav-link" data-scroll-target="#a.-use-a-serif-font">a. Use a serif font</a></li>
-  <li><a href="#b.-try-non-default-colors" id="toc-b.-try-non-default-colors" class="nav-link" data-scroll-target="#b.-try-non-default-colors">b. Try non-default colors</a></li>
-  <li><a href="#c.-use-own-plotting-character" id="toc-c.-use-own-plotting-character" class="nav-link" data-scroll-target="#c.-use-own-plotting-character">c.&nbsp;Use own plotting character</a></li>
-  <li><a href="#how-about-with-ggplot2-use-tidyverse-package" id="toc-how-about-with-ggplot2-use-tidyverse-package" class="nav-link" data-scroll-target="#how-about-with-ggplot2-use-tidyverse-package">4. How about with ggplot2? (use tidyverse package)</a></li>
-  <li><a href="#pre-hackathon-by-team" id="toc-pre-hackathon-by-team" class="nav-link" data-scroll-target="#pre-hackathon-by-team">5. Pre-hackathon by team:</a></li>
-  <li><a href="#a.-team-work-replicate-the-scatterplot-matrix-below-hint-acquire-data-using-the-following-codes" id="toc-a.-team-work-replicate-the-scatterplot-matrix-below-hint-acquire-data-using-the-following-codes" class="nav-link" data-scroll-target="#a.-team-work-replicate-the-scatterplot-matrix-below-hint-acquire-data-using-the-following-codes">a. Team work: Replicate the Scatterplot matrix below (hint: Acquire data using the following codes)</a></li>
-  <li><a href="#b.-send-the-codes-to-the-ta.-the-first-team-delivering-the-code-and-chart-will-win-a-prize-by-time-stamp-and-product" id="toc-b.-send-the-codes-to-the-ta.-the-first-team-delivering-the-code-and-chart-will-win-a-prize-by-time-stamp-and-product" class="nav-link" data-scroll-target="#b.-send-the-codes-to-the-ta.-the-first-team-delivering-the-code-and-chart-will-win-a-prize-by-time-stamp-and-product">b. Send the codes to the TA. The first team delivering the code and chart will win a prize (by time stamp and product)</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -720,10 +697,13 @@ x4          0.4999091  0.1178189 4.243028 0.002164602</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.2     ✔ tibble    3.3.0
+✔ forcats   1.0.0     ✔ stringr   1.5.2
+✔ ggplot2   4.0.1     ✔ tibble    3.3.0
 ✔ lubridate 1.9.4     ✔ tidyr     1.3.1
 ✔ purrr     1.1.0     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
@@ -731,32 +711,32 @@ x4          0.4999091  0.1178189 4.243028 0.002164602</code></pre>
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>dat_long <span class="ot">&lt;-</span> datasets<span class="sc">::</span>anscombe <span class="sc">|&gt;</span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">|&gt;</span></span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">row =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span></span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> <span class="sc">-</span>row,</span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">".value"</span>, <span class="st">"set"</span>),</span>
-<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_pattern =</span> <span class="st">"([xy])(</span><span class="sc">\\</span><span class="st">d)"</span></span>
-<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">set =</span> <span class="fu">factor</span>(set, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"1"</span>,<span class="st">"2"</span>,<span class="st">"3"</span>,<span class="st">"4"</span>)))</span>
-<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dat_long, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
-<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="fl">2.8</span>, <span class="at">stroke =</span> <span class="fl">0.6</span>,</span>
-<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>             <span class="at">fill =</span> <span class="st">"#FFA54C"</span>, <span class="at">color =</span> <span class="st">"#333333"</span>) <span class="sc">+</span></span>
-<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">1.1</span>, <span class="at">color =</span> <span class="st">"#2C7BE5"</span>) <span class="sc">+</span></span>
-<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> set, <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Anscombe's ggplot"</span>,</span>
-<span id="cb36-18"><a href="#cb36-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"x"</span>, <span class="at">y =</span> <span class="st">"y"</span>,</span>
-<span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Data: datasets::anscombe"</span></span>
-<span id="cb36-20"><a href="#cb36-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb36-21"><a href="#cb36-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"serif"</span>) <span class="sc">+</span></span>
-<span id="cb36-22"><a href="#cb36-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb36-23"><a href="#cb36-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">16</span>),</span>
-<span id="cb36-24"><a href="#cb36-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>),</span>
-<span id="cb36-25"><a href="#cb36-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb36-26"><a href="#cb36-26" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>dat_long <span class="ot">&lt;-</span> datasets<span class="sc">::</span>anscombe <span class="sc">|&gt;</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">|&gt;</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">row =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> <span class="sc">-</span>row,</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">".value"</span>, <span class="st">"set"</span>),</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_pattern =</span> <span class="st">"([xy])(</span><span class="sc">\\</span><span class="st">d)"</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">set =</span> <span class="fu">factor</span>(set, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"1"</span>,<span class="st">"2"</span>,<span class="st">"3"</span>,<span class="st">"4"</span>)))</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dat_long, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="fl">2.8</span>, <span class="at">stroke =</span> <span class="fl">0.6</span>,</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>             <span class="at">fill =</span> <span class="st">"#FFA54C"</span>, <span class="at">color =</span> <span class="st">"#333333"</span>) <span class="sc">+</span></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">1.1</span>, <span class="at">color =</span> <span class="st">"#2C7BE5"</span>) <span class="sc">+</span></span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> set, <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Anscombe's ggplot"</span>,</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"x"</span>, <span class="at">y =</span> <span class="st">"y"</span>,</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Data: datasets::anscombe"</span></span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"serif"</span>) <span class="sc">+</span></span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">16</span>),</span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>),</span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
@@ -775,18 +755,18 @@ x4          0.4999091  0.1178189 4.243028 0.002164602</code></pre>
 <section id="a.-team-work-replicate-the-scatterplot-matrix-below-hint-acquire-data-using-the-following-codes" class="level3">
 <h3 class="anchored" data-anchor-id="a.-team-work-replicate-the-scatterplot-matrix-below-hint-acquire-data-using-the-following-codes">a. Team work: Replicate the Scatterplot matrix below (hint: Acquire data using the following codes)</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://github.com/owid/covid-19-data/raw/master/public/data/owid-covid-data.csv"</span>)</span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> owidall[<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"^OWID"</span>, owidall<span class="sc">$</span>iso_code), ]</span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>owideu  <span class="ot">&lt;-</span> <span class="fu">subset</span>(owidall, continent <span class="sc">==</span> <span class="st">"Europe"</span>)</span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>owideu<span class="sc">$</span>date <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(owideu<span class="sc">$</span>date)</span>
-<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(owideu, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> new_deaths, <span class="at">color =</span> location)) <span class="sc">+</span></span>
-<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">0.7</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, <span class="at">y =</span> <span class="st">"COVID Deaths in Europe (Daily)"</span>) <span class="sc">+</span></span>
-<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://github.com/owid/covid-19-data/raw/master/public/data/owid-covid-data.csv"</span>)</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> owidall[<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"^OWID"</span>, owidall<span class="sc">$</span>iso_code), ]</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>owideu  <span class="ot">&lt;-</span> <span class="fu">subset</span>(owidall, continent <span class="sc">==</span> <span class="st">"Europe"</span>)</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>owideu<span class="sc">$</span>date <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(owideu<span class="sc">$</span>date)</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(owideu, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> new_deaths, <span class="at">color =</span> location)) <span class="sc">+</span></span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">0.7</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, <span class="at">y =</span> <span class="st">"COVID Deaths in Europe (Daily)"</span>) <span class="sc">+</span></span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Removed 1607 rows containing missing values or values outside the scale range
 (`geom_point()`).</code></pre>
@@ -800,36 +780,36 @@ x4          0.4999091  0.1178189 4.243028 0.002164602</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(GGally)</span>
-<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://github.com/owid/covid-19-data/raw/master/public/data/owid-covid-data.csv"</span>)</span>
-<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> owidall[<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"^OWID"</span>, owidall<span class="sc">$</span>iso_code), ]</span>
-<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>owideu  <span class="ot">&lt;-</span> <span class="fu">subset</span>(owidall, continent <span class="sc">==</span> <span class="st">"Europe"</span>)</span>
-<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>eu_latest <span class="ot">&lt;-</span> owideu <span class="sc">%&gt;%</span></span>
-<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(location) <span class="sc">%&gt;%</span></span>
-<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_tail</span>(<span class="at">n =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
-<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a>vars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"total_cases_per_million"</span>,</span>
-<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a>          <span class="st">"total_deaths_per_million"</span>,</span>
-<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a>          <span class="st">"gdp_per_capita"</span>,</span>
-<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a>          <span class="st">"life_expectancy"</span>)</span>
-<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a>eu_plot <span class="ot">&lt;-</span> eu_latest <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">all_of</span>(vars)) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span>
-<span id="cb40-19"><a href="#cb40-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-20"><a href="#cb40-20" aria-hidden="true" tabindex="-1"></a>eu_plot <span class="ot">&lt;-</span> eu_plot <span class="sc">%&gt;%</span></span>
-<span id="cb40-21"><a href="#cb40-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(total_cases_per_million,</span>
-<span id="cb40-22"><a href="#cb40-22" aria-hidden="true" tabindex="-1"></a>                  total_deaths_per_million,</span>
-<span id="cb40-23"><a href="#cb40-23" aria-hidden="true" tabindex="-1"></a>                  gdp_per_capita), log1p))</span>
-<span id="cb40-24"><a href="#cb40-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-25"><a href="#cb40-25" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(eu_plot) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Cases(log)"</span>, <span class="st">"Deaths(log)"</span>, <span class="st">"GDPpc(log)"</span>, <span class="st">"LifeExp"</span>)</span>
-<span id="cb40-26"><a href="#cb40-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-27"><a href="#cb40-27" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpairs</span>(eu_plot,</span>
-<span id="cb40-28"><a href="#cb40-28" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Scatterplot Matrix (Europe, log)"</span>,</span>
-<span id="cb40-29"><a href="#cb40-29" aria-hidden="true" tabindex="-1"></a>        <span class="at">lower =</span> <span class="fu">list</span>(<span class="at">continuous =</span> <span class="fu">wrap</span>(<span class="st">"points"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">size =</span> <span class="fl">1.5</span>)),</span>
-<span id="cb40-30"><a href="#cb40-30" aria-hidden="true" tabindex="-1"></a>        <span class="at">diag  =</span> <span class="fu">list</span>(<span class="at">continuous =</span> <span class="fu">wrap</span>(<span class="st">"densityDiag"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(GGally)</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://github.com/owid/covid-19-data/raw/master/public/data/owid-covid-data.csv"</span>)</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> owidall[<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"^OWID"</span>, owidall<span class="sc">$</span>iso_code), ]</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>owideu  <span class="ot">&lt;-</span> <span class="fu">subset</span>(owidall, continent <span class="sc">==</span> <span class="st">"Europe"</span>)</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>eu_latest <span class="ot">&lt;-</span> owideu <span class="sc">%&gt;%</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(location) <span class="sc">%&gt;%</span></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_tail</span>(<span class="at">n =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>vars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"total_cases_per_million"</span>,</span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>          <span class="st">"total_deaths_per_million"</span>,</span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>          <span class="st">"gdp_per_capita"</span>,</span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a>          <span class="st">"life_expectancy"</span>)</span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a>eu_plot <span class="ot">&lt;-</span> eu_latest <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">all_of</span>(vars)) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a>eu_plot <span class="ot">&lt;-</span> eu_plot <span class="sc">%&gt;%</span></span>
+<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(total_cases_per_million,</span>
+<span id="cb41-22"><a href="#cb41-22" aria-hidden="true" tabindex="-1"></a>                  total_deaths_per_million,</span>
+<span id="cb41-23"><a href="#cb41-23" aria-hidden="true" tabindex="-1"></a>                  gdp_per_capita), log1p))</span>
+<span id="cb41-24"><a href="#cb41-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-25"><a href="#cb41-25" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(eu_plot) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Cases(log)"</span>, <span class="st">"Deaths(log)"</span>, <span class="st">"GDPpc(log)"</span>, <span class="st">"LifeExp"</span>)</span>
+<span id="cb41-26"><a href="#cb41-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-27"><a href="#cb41-27" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpairs</span>(eu_plot,</span>
+<span id="cb41-28"><a href="#cb41-28" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Scatterplot Matrix (Europe, log)"</span>,</span>
+<span id="cb41-29"><a href="#cb41-29" aria-hidden="true" tabindex="-1"></a>        <span class="at">lower =</span> <span class="fu">list</span>(<span class="at">continuous =</span> <span class="fu">wrap</span>(<span class="st">"points"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">size =</span> <span class="fl">1.5</span>)),</span>
+<span id="cb41-30"><a href="#cb41-30" aria-hidden="true" tabindex="-1"></a>        <span class="at">diag  =</span> <span class="fu">list</span>(<span class="at">continuous =</span> <span class="fu">wrap</span>(<span class="st">"densityDiag"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -839,9 +819,9 @@ x4          0.4999091  0.1178189 4.243028 0.002164602</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(GGally)</span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(GGally)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'scales'</code></pre>
@@ -856,44 +836,44 @@ Attaching package: 'scales'</code></pre>
 
     col_factor</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">scipen =</span> <span class="dv">999</span>)  </span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://github.com/owid/covid-19-data/raw/master/public/data/owid-covid-data.csv"</span>)</span>
-<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> owidall[<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"^OWID"</span>, owidall<span class="sc">$</span>iso_code), ]</span>
-<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>owideu  <span class="ot">&lt;-</span> <span class="fu">subset</span>(owidall, continent <span class="sc">==</span> <span class="st">"Europe"</span>)</span>
-<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>eu_latest <span class="ot">&lt;-</span> owideu <span class="sc">%&gt;%</span></span>
-<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(location) <span class="sc">%&gt;%</span></span>
-<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_tail</span>(<span class="at">n =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
-<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>vars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"total_cases_per_million"</span>,</span>
-<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>          <span class="st">"total_deaths_per_million"</span>,</span>
-<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>          <span class="st">"gdp_per_capita"</span>,</span>
-<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a>          <span class="st">"life_expectancy"</span>)</span>
-<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>eu_plot <span class="ot">&lt;-</span> eu_latest <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">all_of</span>(vars)) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span>
-<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(eu_plot) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Cases/mil"</span>, <span class="st">"Deaths/mil"</span>, <span class="st">"GDPpc"</span>, <span class="st">"LifeExp"</span>)</span>
-<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>my_points <span class="ot">&lt;-</span> <span class="cf">function</span>(data, mapping, ...){</span>
-<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">data =</span> data, <span class="at">mapping =</span> mapping) <span class="sc">+</span></span>
-<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">size =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
-<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">","</span>), <span class="at">breaks =</span> <span class="fu">pretty_breaks</span>(<span class="dv">3</span>)) <span class="sc">+</span></span>
-<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">","</span>), <span class="at">breaks =</span> <span class="fu">pretty_breaks</span>(<span class="dv">3</span>))</span>
-<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a>my_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(data, mapping, ...){</span>
-<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">data =</span> data, <span class="at">mapping =</span> mapping) <span class="sc">+</span></span>
-<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">20</span>, <span class="at">fill =</span> <span class="st">"grey70"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
-<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">","</span>), <span class="at">breaks =</span> <span class="fu">pretty_breaks</span>(<span class="dv">3</span>))</span>
-<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb45-31"><a href="#cb45-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpairs</span>(</span>
-<span id="cb45-33"><a href="#cb45-33" aria-hidden="true" tabindex="-1"></a>  eu_plot,</span>
-<span id="cb45-34"><a href="#cb45-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">lower =</span> <span class="fu">list</span>(<span class="at">continuous =</span> my_points),</span>
-<span id="cb45-35"><a href="#cb45-35" aria-hidden="true" tabindex="-1"></a>  <span class="at">diag  =</span> <span class="fu">list</span>(<span class="at">continuous =</span> my_hist),</span>
-<span id="cb45-36"><a href="#cb45-36" aria-hidden="true" tabindex="-1"></a>  <span class="at">upper =</span> <span class="fu">list</span>(<span class="at">continuous =</span> <span class="fu">wrap</span>(<span class="st">"cor"</span>, <span class="at">size =</span> <span class="dv">4</span>)),</span>
-<span id="cb45-37"><a href="#cb45-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Scatterplot Matrix (Europe)"</span></span>
-<span id="cb45-38"><a href="#cb45-38" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">scipen =</span> <span class="dv">999</span>)  </span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://github.com/owid/covid-19-data/raw/master/public/data/owid-covid-data.csv"</span>)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>owidall <span class="ot">&lt;-</span> owidall[<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"^OWID"</span>, owidall<span class="sc">$</span>iso_code), ]</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>owideu  <span class="ot">&lt;-</span> <span class="fu">subset</span>(owidall, continent <span class="sc">==</span> <span class="st">"Europe"</span>)</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>eu_latest <span class="ot">&lt;-</span> owideu <span class="sc">%&gt;%</span></span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(location) <span class="sc">%&gt;%</span></span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_tail</span>(<span class="at">n =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>vars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"total_cases_per_million"</span>,</span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>          <span class="st">"total_deaths_per_million"</span>,</span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>          <span class="st">"gdp_per_capita"</span>,</span>
+<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>          <span class="st">"life_expectancy"</span>)</span>
+<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a>eu_plot <span class="ot">&lt;-</span> eu_latest <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">all_of</span>(vars)) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span>
+<span id="cb46-18"><a href="#cb46-18" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(eu_plot) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Cases/mil"</span>, <span class="st">"Deaths/mil"</span>, <span class="st">"GDPpc"</span>, <span class="st">"LifeExp"</span>)</span>
+<span id="cb46-19"><a href="#cb46-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-20"><a href="#cb46-20" aria-hidden="true" tabindex="-1"></a>my_points <span class="ot">&lt;-</span> <span class="cf">function</span>(data, mapping, ...){</span>
+<span id="cb46-21"><a href="#cb46-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">data =</span> data, <span class="at">mapping =</span> mapping) <span class="sc">+</span></span>
+<span id="cb46-22"><a href="#cb46-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">size =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb46-23"><a href="#cb46-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">","</span>), <span class="at">breaks =</span> <span class="fu">pretty_breaks</span>(<span class="dv">3</span>)) <span class="sc">+</span></span>
+<span id="cb46-24"><a href="#cb46-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">","</span>), <span class="at">breaks =</span> <span class="fu">pretty_breaks</span>(<span class="dv">3</span>))</span>
+<span id="cb46-25"><a href="#cb46-25" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb46-26"><a href="#cb46-26" aria-hidden="true" tabindex="-1"></a>my_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(data, mapping, ...){</span>
+<span id="cb46-27"><a href="#cb46-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">data =</span> data, <span class="at">mapping =</span> mapping) <span class="sc">+</span></span>
+<span id="cb46-28"><a href="#cb46-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">20</span>, <span class="at">fill =</span> <span class="st">"grey70"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb46-29"><a href="#cb46-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">","</span>), <span class="at">breaks =</span> <span class="fu">pretty_breaks</span>(<span class="dv">3</span>))</span>
+<span id="cb46-30"><a href="#cb46-30" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb46-31"><a href="#cb46-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-32"><a href="#cb46-32" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpairs</span>(</span>
+<span id="cb46-33"><a href="#cb46-33" aria-hidden="true" tabindex="-1"></a>  eu_plot,</span>
+<span id="cb46-34"><a href="#cb46-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">lower =</span> <span class="fu">list</span>(<span class="at">continuous =</span> my_points),</span>
+<span id="cb46-35"><a href="#cb46-35" aria-hidden="true" tabindex="-1"></a>  <span class="at">diag  =</span> <span class="fu">list</span>(<span class="at">continuous =</span> my_hist),</span>
+<span id="cb46-36"><a href="#cb46-36" aria-hidden="true" tabindex="-1"></a>  <span class="at">upper =</span> <span class="fu">list</span>(<span class="at">continuous =</span> <span class="fu">wrap</span>(<span class="st">"cor"</span>, <span class="at">size =</span> <span class="dv">4</span>)),</span>
+<span id="cb46-37"><a href="#cb46-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Scatterplot Matrix (Europe)"</span></span>
+<span id="cb46-38"><a href="#cb46-38" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -906,23 +886,27 @@ Attaching package: 'scales'</code></pre>
 <section id="b.-send-the-codes-to-the-ta.-the-first-team-delivering-the-code-and-chart-will-win-a-prize-by-time-stamp-and-product" class="level3">
 <h3 class="anchored" data-anchor-id="b.-send-the-codes-to-the-ta.-the-first-team-delivering-the-code-and-chart-will-win-a-prize-by-time-stamp-and-product">b. Send the codes to the TA. The first team delivering the code and chart will win a prize (by time stamp and product)</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.exists</span>(<span class="st">"A3.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.exists</span>(<span class="st">"A3.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="fu">c</span>(<span class="st">"."</span>, <span class="st">"_site"</span>, <span class="st">"docs"</span>), <span class="at">pattern =</span> <span class="st">"A3</span><span class="sc">\\</span><span class="st">.html"</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="fu">c</span>(<span class="st">"."</span>, <span class="st">"_site"</span>, <span class="st">"docs"</span>), <span class="at">pattern =</span> <span class="st">"A3</span><span class="sc">\\</span><span class="st">.html"</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Jing-Tao/A3.html"</code></pre>
+<pre><code>[1] "A3.html"          "datavis/A3.html"  "datavis2/A3.html" "docs/A3.html"    </code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.rename</span>(<span class="st">"Jing-Tao/A3.html"</span>, <span class="st">"A3.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.rename</span>(<span class="st">"Jing-Tao/A3.html"</span>, <span class="st">"A3.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in file.rename("Jing-Tao/A3.html", "A3.html"): cannot rename file
+'Jing-Tao/A3.html' to 'A3.html', reason 'No such file or directory'</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">dir.exists</span>(<span class="st">"Jing-Tao/A3_files"</span>)) {</span>
-<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">file.rename</span>(<span class="st">"Jing-Tao/A3_files"</span>, <span class="st">"A3_files"</span>)</span>
-<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">dir.exists</span>(<span class="st">"Jing-Tao/A3_files"</span>)) {</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">file.rename</span>(<span class="st">"Jing-Tao/A3_files"</span>, <span class="st">"A3_files"</span>)</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in file.rename("Jing-Tao/A3_files", "A3_files"): cannot rename file
 'Jing-Tao/A3_files' to 'A3_files', reason 'Directory not empty'</code></pre>
