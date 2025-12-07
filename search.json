@@ -61,5 +61,26 @@
     "title": "Jing Tao",
     "section": "",
     "text": "This is Jing Tao’s website for EPPS 6356: Data Visualization"
+  },
+  {
+    "objectID": "A6.html",
+    "href": "A6.html",
+    "title": "Assignment 6",
+    "section": "",
+    "text": "This assignment includes interactive Shiny Apps using: - mtcars dataset - USArrests dataset - US population (uspop) dataset - Real Cyber Incident Data from the Council of Foreign Relations\nBelow is the deployed Shiny App:"
+  },
+  {
+    "objectID": "A6.html#shiny-app-interactive-visualizations",
+    "href": "A6.html#shiny-app-interactive-visualizations",
+    "title": "Assignment 6",
+    "section": "",
+    "text": "This assignment includes interactive Shiny Apps using: - mtcars dataset - USArrests dataset - US population (uspop) dataset - Real Cyber Incident Data from the Council of Foreign Relations\nBelow is the deployed Shiny App:"
+  },
+  {
+    "objectID": "A6.html#markdown",
+    "href": "A6.html#markdown",
+    "title": "Assignment 6",
+    "section": "",
+    "text": "title: “Assignment 6” author: “Jing Tao” format: html: embed-resources: true —"
   }
 ]
