@@ -1,0 +1,12 @@
+name: Assignment6_ShinyApp
+title: Assignment6_ShinyApp
+username: jingusa
+account: jingusa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16258939
+bundleId: 11286341
+url: https://jingusa.shinyapps.io/Assignment6_ShinyApp/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

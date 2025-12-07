@@ -1,0 +1,218 @@
+library(shiny)
+
+# ---------- 1. 内置 uspop 数据处理 ----------
+uspop_df <- data.frame(
+  year = as.numeric(time(uspop)),
+  population = as.numeric(uspop)
+)
+
+# ---------- 2. 读取你的真实数据（CFR 网络攻击） ----------
+# 确保 CFR_daily_events_with_iso2.csv 与 app.R 在同一文件夹
+cfr <- read.csv("CFR_daily_events_with_iso2.csv", stringsAsFactors = FALSE)
+
+# 处理日期与年份
+cfr$Date <- as.Date(cfr$Date)
+cfr$year <- as.numeric(format(cfr$Date, "%Y"))
+
+minYear <- min(cfr$year, na.rm = TRUE)
+maxYear <- max(cfr$year, na.rm = TRUE)
+
+ui <- fluidPage(
+  tags$style(HTML("
+    body {
+      background-color: #f7f9fc;
+      color: #2c3e50;
+      font-family: 'Baskerville', serif;
+    }
+    h1 {
+      font-family: 'Baskerville', serif;
+      color: #003366;
+      font-weight: bold;
+    }
+    .nav-tabs > li > a {
+      color: #003366 !important;
+      font-weight: bold;
+      font-family: 'Baskerville', serif;
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li > a:hover {
+      background-color: #003366 !important;
+      color: #ffffff !important;
+      font-family: 'Baskerville', serif;
+    }
+    .well {
+      background-color: #ecf2f9 !important;
+      border-color: #c9d6e3 !important;
+    }
+    .shiny-input-container {
+      color: #003366;
+      font-weight: bold;
+      font-family: 'Baskerville', serif;
+    }
+  ")),
+  
+  titlePanel("Assignment 6 - Shiny App"),
+  
+  tabsetPanel(
+    # ---------- Tab 1: mtcars ----------
+    tabPanel("mtcars",
+             sidebarLayout(
+               sidebarPanel(
+                 selectInput("mtcars_x", "X variable:",
+                             choices = names(mtcars),
+                             selected = "wt"),
+                 selectInput("mtcars_y", "Y variable:",
+                             choices = names(mtcars),
+                             selected = "mpg")
+               ),
+               mainPanel(
+                 plotOutput("mtcarsPlot")
+               )
+             )
+    ),
+    
+    # ---------- Tab 2: USArrests ----------
+    tabPanel("USArrests",
+             sidebarLayout(
+               sidebarPanel(
+                 selectInput("usa_x", "X variable:",
+                             choices = names(USArrests),
+                             selected = "UrbanPop"),
+                 selectInput("usa_y", "Y variable:",
+                             choices = names(USArrests),
+                             selected = "Murder")
+               ),
+               mainPanel(
+                 plotOutput("usarrestsPlot")
+               )
+             )
+    ),
+    
+    # ---------- Tab 3: uspop ----------
+    tabPanel("uspop",
+             sidebarLayout(
+               sidebarPanel(
+                 sliderInput(
+                   "year_range",
+                   "Year range:",
+                   min = floor(min(uspop_df$year)),
+                   max = ceiling(max(uspop_df$year)),
+                   value = c(floor(min(uspop_df$year)),
+                             ceiling(max(uspop_df$year))),
+                   step = 1
+                 )
+               ),
+               mainPanel(
+                 plotOutput("uspopPlot")
+               )
+             )
+    ),
+    
+    # ---------- Tab 4: 你的真实数据（CFR Cyber Data） ----------
+    tabPanel("CFR Cyber Data",
+             sidebarLayout(
+               sidebarPanel(
+                 sliderInput(
+                   "cfr_year",
+                   "Year range:",
+                   min = minYear,
+                   max = maxYear,
+                   value = c(minYear, maxYear),
+                   step = 1
+                 ),
+                 selectInput(
+                   "cfr_group",
+                   "Group by:",
+                   choices = c(
+                     "Victim Country"   = "victims_country",
+                     "Sponsor Country"  = "Sponsor",
+                     "Type of Operation" = "Type",
+                     "Category"          = "Category"
+                   ),
+                   selected = "victims_country"
+                 )
+               ),
+               mainPanel(
+                 plotOutput("cfrPlot")
+               )
+             )
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  
+  # ------ mtcars 图 ------
+  output$mtcarsPlot <- renderPlot({
+    xvar <- mtcars[[input$mtcars_x]]
+    yvar <- mtcars[[input$mtcars_y]]
+    plot(
+      xvar, yvar,
+      xlab = input$mtcars_x,
+      ylab = input$mtcars_y,
+      pch = 19
+    )
+  })
+  
+  # ------ USArrests 图 ------
+  output$usarrestsPlot <- renderPlot({
+    xvar <- USArrests[[input$usa_x]]
+    yvar <- USArrests[[input$usa_y]]
+    plot(
+      xvar, yvar,
+      xlab = input$usa_x,
+      ylab = input$usa_y,
+      pch = 19
+    )
+  })
+  
+  # ------ uspop 折线图 ------
+  output$uspopPlot <- renderPlot({
+    df <- subset(uspop_df,
+                 year >= input$year_range[1] &
+                   year <= input$year_range[2])
+    plot(
+      df$year, df$population,
+      type = "l",
+      xlab = "Year",
+      ylab = "Population (millions)",
+      lwd = 2
+    )
+  })
+  
+  # ------ CFR Cyber Data 柱状图（你的真实数据）------
+  output$cfrPlot <- renderPlot({
+    # 根据年份筛选
+    df <- subset(cfr,
+                 !is.na(year) &
+                   year >= input$cfr_year[1] &
+                   year <= input$cfr_year[2])
+    
+    var <- input$cfr_group
+    vals <- df[[var]]
+    vals <- vals[!is.na(vals) & vals != ""]
+    
+    if (length(vals) == 0) {
+      plot.new()
+      title("No data available for selected filters")
+      return()
+    }
+    
+    counts <- sort(table(vals), decreasing = TRUE)
+    
+    # 只画前 15 个，避免 x 轴太挤
+    if (length(counts) > 15) {
+      counts <- counts[1:15]
+    }
+    
+    barplot(
+      counts,
+      las = 2,
+      cex.names = 0.8,
+      main = "Top groups in selected period",
+      ylab = "Number of incidents"
+    )
+  })
+}
+
+shinyApp(ui = ui, server = server)
